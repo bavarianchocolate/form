@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+
+</head>
+
+<body>
+    <div class="row">
+        <section class="section">
+            <header>
+                <h3>Оформление заказа</h3>
+                <h4>Введите контактную информацию</h4>
+            </header>
+            <main>
+                <form>
+                    <div class="form-item box-item">
+                        <input type="text" name="name" placeholder="Имя Фамилия" data-name data-required>
+                        <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i>Поле заполнено
+                            неверно</small>
+                    </div>
+                    <div class="form-item box-item">
+                        <input type="email" name="email" placeholder="Email" data-email data-required>
+                        <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> Поле заполнено
+                            неверно</small>
+                        <small class="errorEmail"><i class="fa fa-asterisk" aria-hidden="true"></i> email is not
+                            valid</small>
+                    </div>
+                    <div class="form-item box-item">
+                        <div class="form-item-triple">
+                            <div class="radio-label">
+                                <label class="label">Оплата</label>
+                            </div>
+                            <div class="form-item">
+                                <input id="onSite" type="radio" name="gender" value="onSite" data-once>
+                                <label for="onSite">На сайте</label>
+                            </div>
+                            <div class="form-item">
+                                <input id="onDelivery" type="radio" name="gender" value="onDelivery" data-once>
+                                <label for="onDelivery">При получении</label>
+                            </div>
+                        </div>
+                        <small class="errorOnce"><i class="fa fa-asterisk" aria-hidden="true"></i> Выберите способ
+                            оплаты</small>
+                    </div>
+                    <div class="form-item box-item">
+                        <div class="form-item-triple">
+                            <div class="radio-label">
+                                <label class="label">Получение</label>
+                            </div>
+                            <div class="form-item">
+                                <input id="receiving" type="radio" name="receiving" value="pickup" data-once>
+                                <label for="receiving">Самовывоз</label>
+                            </div>
+                            <div class="form-item">
+                                <input id="receiving" type="radio" name="receiving" value="novaPoshta" data-once>
+                                <label for="receiving">Новая Почта</label>
+                            </div>
+                        </div>
+                        <small class="errorOnce"><i class="fa fa-asterisk" aria-hidden="true"></i> Выберите способ
+                            доставки</small>
+                    </div>
+                    <div class="form-item box-item">
+                        <input type="text" name="address" placeholder="Адрес" data-required>
+                        <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> Адрес не
+                            введен</small>
+                    </div>
+                    <div class="form-item box-item">
+                        <input type="text" name="phone" placeholder="Номер телефона(+380*********)" data-required
+                            data-number>
+                        <small class="errorNum"><i class="fa fa-asterisk" aria-hidden="true"></i> Введите номер типа
+                            +380*********</small>
+                    </div>
+                    <div class="form-item">
+                        <span id="submit" class="submit">Submit</span>
+                    </div>
+                </form>
+            </main>
+            <footer>
+            </footer>
+            <i class="wave"></i>
+        </section>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
